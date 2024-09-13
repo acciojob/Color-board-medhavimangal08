@@ -1,6 +1,5 @@
 /*  your css code here. If applicable */
 .container{
-	gap:5px;
 	background-color:black;
 	display:flex;
 	flex-wrap:wrap;

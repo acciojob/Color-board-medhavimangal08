@@ -5,7 +5,6 @@
 	flex-wrap:wrap;
 	width:600px;
 	height:1200px;
-	
 }
 .square{
 	border:1px solid grey;
@@ -14,5 +13,16 @@
 	background-color:rgb(29, 29, 29);
 }
 .square:hover {
-transition: background-color 1s;
-  background-color: red; // change to your preferred color
+   transition: background-color 1s;
+   background-color: red; // change to your preferred color
+}
+
+@keyframes fadeOut {
+  from {background-color: red;}
+  to {background-color: rgb(29, 29, 29);}
+}
+
+.square:not(:hover) {
+  animation: fadeOut 1s;
+}
+
